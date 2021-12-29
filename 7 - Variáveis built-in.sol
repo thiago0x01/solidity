@@ -8,11 +8,11 @@ contract variaveis {
     uint public numero_bloco;
     uint public timestamp;
 
-    address public quem_enviou;
+    address public quem_chamou;
     uint public valor;
 
     // uint public precoGas;
-    address public enviou;
+    address public de_onde_originou;
 
     constructor() payable {
         id = block.chainid;
@@ -22,11 +22,11 @@ contract variaveis {
         numero_bloco = block.number;
         timestamp = block.timestamp;
 
-        quem_enviou = msg.sender;
+        quem_chamou = msg.sender;
         valor = msg.value;
 
         // precoGas = tx.gasprice;
-        enviou = tx.origin;
+        de_onde_originou = tx.origin;
     }
 
     //DIFERENÇA ENTRE tx.origin e msg.sender:
