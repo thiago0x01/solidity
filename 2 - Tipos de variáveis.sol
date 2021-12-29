@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 contract meuContrato {
     // Variáveis simples
     // Não recebe numeros negativos
-    uint minhaidade = 24;
+    uint256 minhaidade = 24;
     // Limita até 256 bytes
     uint256 ate256;
 
@@ -16,16 +16,16 @@ contract meuContrato {
     bytes32 data;
 
     // Listas
-    uint[] numeros;
+    uint256[] numeros;
     string[] clientes;
     address[] carteiras;
 
     // Cria um objeto de chave e valor, onde a chave é o address que recebe o saldos
-    mapping(address => uint) saldos;
+    mapping(address => uint256) saldos;
 
     // "Tipando Usuario"
     struct Usuario {
-        uint id;
+        uint256 id;
         string name;
         address endereco_carteira;
     }

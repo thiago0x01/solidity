@@ -1,15 +1,15 @@
 pragma solidity ^0.8.0;
 
 contract variaveis {
-    uint public id;
+    uint256 public id;
     address public endereco_miner;
-    uint public dificuldade;
-    uint public limit;
-    uint public numero_bloco;
-    uint public timestamp;
+    uint256 public dificuldade;
+    uint256 public limit;
+    uint256 public numero_bloco;
+    uint256 public timestamp;
 
     address public quem_chamou;
-    uint public valor;
+    uint256 public valor;
 
     // uint public precoGas;
     address public de_onde_originou;
@@ -18,7 +18,7 @@ contract variaveis {
         id = block.chainid;
         endereco_miner = block.coinbase;
         dificuldade = block.difficulty;
-        limit = block.gaslimit; 
+        limit = block.gaslimit;
         numero_bloco = block.number;
         timestamp = block.timestamp;
 

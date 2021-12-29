@@ -5,20 +5,20 @@ pragma solidity ^0.8.0;
 // Pure
 
 contract parametros {
-    uint numero = 10;
+    uint256 numero = 10;
 
     // Padrão
-    function qualNumero() external returns(uint) {
+    function qualNumero() external view returns (uint256) {
         return numero;
     }
 
     // View
-    function qualNumeroView() external view returns(uint) {
+    function qualNumeroView() external view returns (uint256) {
         return numero;
     }
 
     // Pure
-    function calcula(uint a, uint b) external pure returns(uint) {
+    function calcula(uint256 a, uint256 b) external pure returns (uint256) {
         return a + b;
     }
 }
