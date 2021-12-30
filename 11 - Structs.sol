@@ -1,4 +1,4 @@
-pragma solidity ^0.8.11;
+pragma solidity 0.8.11;
 
 contract marketplace {
     struct Usuario {
